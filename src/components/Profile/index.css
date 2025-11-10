@@ -1,0 +1,131 @@
+/* profile.css */
+:root{
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --accent: #5d89ff;
+  --border: #e6e7ea;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  background: #f4f6fb;
+  /* min-height: calc(100vh - 10vh); */
+  height: fit-content;
+}
+
+.profile-card {
+  width: 75vw;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(20, 30, 60, 0.08);
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+
+.profile-header {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.profile-basic {
+  flex: 1;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+}
+
+.profile-email {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: #111827;
+}
+
+/* body */
+.profile-body {
+  padding-top: 12px;
+}
+
+.profile-section {
+  margin-bottom: 18px;
+}
+
+.profile-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.form-grid input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  outline: none;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.error {
+  margin-top: 8px;
+  color: #b91c1c;
+  background: #fff5f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #fca5a5;
+}

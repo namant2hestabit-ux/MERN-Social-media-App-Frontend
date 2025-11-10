@@ -1,0 +1,104 @@
+.hero-card {
+  display: inline-block;
+  position: relative;
+  width: 350px;
+  min-width: 350px;
+  height: 380px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  background: #383a45;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-card-profile-img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-card-desc-bg {
+  background-image: linear-gradient(0deg, #3f5efb, #fc466b);
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  border-radius: 25px;
+  transform: skew(19deg, -9deg);
+}
+
+.hero-card-secondary .hero-card-desc-bg {
+  background-image: linear-gradient(-20deg, #514A9D, #24C6DC);
+}
+
+.hero-card-logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 18px;
+  background: #fff;
+  position: absolute;
+  bottom: 28%;
+  left: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+.card-first-name{
+    color: black;
+}
+
+.card-first-desc{
+    font-weight: 200;
+}
+
+.hero-card-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-card-text {
+  position: absolute;
+  left: 120px;
+  bottom: 25%;
+  font-weight: 900;
+  width: 200px;
+  height: 80px;
+
+}
+
+.hero-card-date {
+  position: absolute;
+  left: 25px;
+  bottom: 8%;
+  font-size: 14px;
+}
+
+.hero-card-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 8%;
+  padding: 8px 18px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.hero-card-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.expand-btn {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.expand-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+

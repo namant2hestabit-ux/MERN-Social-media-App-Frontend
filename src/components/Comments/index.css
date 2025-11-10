@@ -1,0 +1,40 @@
+.comment-section {
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.comment-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.comment-author {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+
+.comment-card p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.loading {
+  color: gray;
+  font-style: italic;
+}
+
+.comment-actions {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.comment-actions button {
+  border: none !important;
+  font-size: 12px !important;
+}

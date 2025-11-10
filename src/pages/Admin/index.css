@@ -1,0 +1,253 @@
+body {
+  margin: 0px;
+}
+
+/* === MAIN LAYOUT === */
+.admin-dashboard {
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 60px auto;
+  grid-template-areas:
+    "sidebar topbar"
+    "sidebar main";
+  height: 100vh;
+}
+
+/* === TOPBAR === */
+.admin-topbar {
+  grid-area: topbar;
+  background: #1a2233;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid #2b3445;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.admin-topbar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.admin-logout-btn {
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.admin-logout-btn:hover {
+  background: #ff6b81;
+  transform: scale(1.05);
+}
+
+/* === SIDEBAR === */
+.admin-sidebar {
+  grid-area: sidebar;
+  background: #161d29;
+  border-right: 1px solid #2b3445;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.admin-sidebar h2 {
+  font-size: 1.1rem;
+  color: #8899aa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-sidebar a {
+  color: #e6e9ef;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.admin-sidebar a:hover {
+  background: #1f283a;
+  color: #00b4d8;
+}
+
+/* === MAIN CONTENT === */
+.admin-main {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 2rem;
+  background: #101820;
+}
+
+.admin-main h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* === SECTIONS === */
+.admin-section {
+  margin-bottom: 2rem;
+  background: #18222f;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.admin-section h2 {
+  color: rgb(211, 211, 211);
+  background: #1f2a3d;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 1px solid #2a364c;
+}
+
+/* === TABLE STYLES === */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e6e9ef;
+  font-size: 0.95rem;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #2a364c;
+}
+
+.admin-table th {
+  background: #1c2535;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #aab4c1;
+  font-size: 0.85rem;
+}
+
+.admin-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.delete-btn {
+  background: #e84118;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  margin-left: 1rem;
+}
+
+.delete-btn:hover {
+  background: #ff6b6b;
+  transform: scale(1.05);
+}
+
+/* === SCROLLBAR === */
+.admin-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-main::-webkit-scrollbar-thumb {
+  background: #2a364c;
+  border-radius: 4px;
+}
+
+.edit-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.edit-modal-content {
+  background: #1a2233;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-modal-content h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.edit-modal-content input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #2a3445;
+  color: white;
+  outline: none;
+}
+
+.edit-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e84118;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .admin-dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+      "topbar"
+      "main";
+  }
+
+  .admin-sidebar {
+    display: none;
+  }
+
+  .admin-topbar {
+    justify-content: space-between;
+  }
+}
