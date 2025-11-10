@@ -5,7 +5,7 @@ import "./index.css";
 import api from "../../api/api";
 import { toast } from "react-toastify";
 
-const socket = io("https://mern-social-media-app-backend-z3xs.onrender.com", {
+const socket = io(`${import.meta.env.VITE_BACKEND_URL}`, {
   withCredentials: true,
 });
 

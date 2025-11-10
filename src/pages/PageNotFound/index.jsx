@@ -14,7 +14,7 @@ const PageNotFound = () => {
         </p>
 
         <nav className="nf-actions" aria-label="404 actions">
-          <Link className="nf-btn nf-btn-primary" to="/home">Go Home</Link>
+          <Link className="nf-btn nf-btn-primary" to="/">Go Home</Link>
           <button
             className="nf-btn nf-btn-ghost"
             onClick={() => window.history.length > 1 ? window.history.back() : (window.location.href = "/")}

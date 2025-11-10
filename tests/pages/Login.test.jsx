@@ -8,6 +8,7 @@ import Login from "../../src/pages/Login";
 const mockDispatch = vi.fn();
 vi.mock("react-redux", () => ({
   useDispatch: () => mockDispatch,
+  useSelector: () => mockDispatch,
 }));
 
 // Mock Redux actions
@@ -64,6 +65,7 @@ vi.mock("../../src/api/api", () => ({
 
 import api from "../../src/api/api";
 import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
 
 describe("Login Component", () => {
   beforeEach(() => {

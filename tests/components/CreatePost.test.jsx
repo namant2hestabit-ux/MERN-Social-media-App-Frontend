@@ -14,6 +14,7 @@ vi.mock("../../src/api/api", () => ({
 
 vi.mock("react-toastify", () => ({
   toast: {
+    error: vi.fn(),
     success: vi.fn(),
   },
 }));

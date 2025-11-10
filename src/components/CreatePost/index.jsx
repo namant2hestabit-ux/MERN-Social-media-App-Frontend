@@ -27,10 +27,10 @@ const CreatePost = () => {
 
       console.log("Post response:", res.data);
     } catch (error) {
+      console.log("Error in Create Post Component", error);
       toast.error(
         error.response?.data?.message || "Error in Create Post Component"
       );
-      console.log("Error in Create Post Component", error);
     }
   };
 

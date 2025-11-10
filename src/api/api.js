@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://mern-social-media-app-backend-z3xs.onrender.com/api/",
+  baseURL: `${import.meta.env.VITE_BACKEND_URL}/api/`,
   withCredentials: true,
 });
+
 
 // --- Interceptor to catch token expiration ---
 api.interceptors.response.use(
