@@ -70,7 +70,7 @@ describe("Feed Component", () => {
     render(<Feed />);
 
     await waitFor(() => {
-      expect(api.get).toHaveBeenCalledWith("/posts?page=1&limit=10");
+      expect(api.get).toHaveBeenCalledWith("/posts?page=1&limit=12");
       expect(screen.getAllByTestId("card")).toHaveLength(2);
     });
   });
