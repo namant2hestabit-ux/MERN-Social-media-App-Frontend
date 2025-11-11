@@ -118,6 +118,4 @@ Contributing
 - Add unit tests for new components and critical behavior
 - Update this README when adding new environment variables or changing critical scripts
 
-Contact / Owner
-----------------
-- If you want me to expand the README with additional diagrams, component API docs, or to run and fix failing frontend tests, reply with which components/pages to prioritize.
+
