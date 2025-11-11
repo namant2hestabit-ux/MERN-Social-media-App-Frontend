@@ -16,7 +16,7 @@ const Feed = () => {
     try {
       setLoadingMore(true);
 
-      const res = await api.get(`/posts?page=${pageNum}&limit=10`);
+      const res = await api.get(`/posts?page=${pageNum}&limit=12`);
       if (res.status === 201) {
         const newPosts = res.data.posts || [];
         if (newPosts.length === 0) {

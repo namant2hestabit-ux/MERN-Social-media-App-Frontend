@@ -1,9 +1,9 @@
 .feed-container {
-  width: 70vw;
+  width: 90vw;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 0px;
   justify-content: center;
 }
 
@@ -14,14 +14,23 @@
   padding: 15px;
 }
 
+.hero-card{
+  transition: 0.3s ease-in-out;
+}
+
+.hero-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
 .post-header {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.avatar {
-  background: linear-gradient(135deg,#5d89ff, #fc466b);
+r {
+  background: linear-gradient(135deg, #5d89ff, #fc466b);
   /* background: #5d89ff ; */
   width: 100%;
   height: 76px;
